@@ -5,7 +5,7 @@ public class FollowPlayer : MonoBehaviour
     [SerializeField]
     private Transform playerTransform;
     [SerializeField]
-    private Vector3 cameraOffset;
+    //private Vector3 cameraOffset;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,6 +15,6 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.position = playerTransform.position + cameraOffset;
+        transform.position = playerTransform.position;
     }
 }

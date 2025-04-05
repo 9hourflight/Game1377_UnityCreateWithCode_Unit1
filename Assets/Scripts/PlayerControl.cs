@@ -22,7 +22,7 @@ public class PlayerControl : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate((Vector3.forward * vehicleSpeed) *Time.deltaTime * verticalInput);
-        transform.Translate((Vector3.right * turnSpeed) * Time.deltaTime *horizontalInput);
+        transform.Translate((Vector3.right * turnSpeed) * Time.deltaTime * horizontalInput);
         transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime * horizontalInput);
     }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class SpawnManager : MonoBehaviour
 {
     public GameObject spawnPrefab;
     [SerializeField] private Transform[] spawnTransforms;

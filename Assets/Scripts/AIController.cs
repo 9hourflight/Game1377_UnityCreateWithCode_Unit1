@@ -5,7 +5,7 @@ public class AIController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField]
     private float vehicleSpeed;
-    private float lifeTime;
+    private float lifeTime = 10f;
     void Start()
     {
         Destroy(this.gameObject, lifeTime);
